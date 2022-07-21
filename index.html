@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La padarie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<header class="header">
+    <img class="logo" src="Imagens/Logo.svg" alt="Logo">
+
+</header>
+
+<body>
+    <main class="body">
+        <div class="bloks">
+            <div class="body-container">
+                <div class="inside-blocks">
+                    <h4>Pessoas na fila</h4>
+                    <img src="Imagens/Icon.svg" alt="Icon">
+                </div>
+                <div class="number">
+                    <h1>7</h1>
+                </div>
+            </div>
+            <div class="body-container">
+                <div class="inside-blocks">
+                    <h4>Pães Vendidos</h4>
+                    <img src="Imagens/Group 1.svg" alt="Icon">
+                </div>
+                <div class="number">
+                    <h1>350</h1>
+                </div>
+            </div>
+            <div class="input">
+                <div class="inside-blocks">
+                    <h4>Entrada</h4>
+                    <img src="Imagens/Group 2.svg" alt="Icon">
+                </div>
+                <div class="number">
+                    <h1>R$ 175,00</h1>
+                </div>
+            </div>
+        </div>
+        <div class="link">
+            <button class="button-fila">
+                <h4 class="text">+ Adicionar Pessoa a fila</h4>
+            </button>
+        </div>
+        <div class="card-container" id="cardContainer">
+
+        </div>
+
+
+    </main>
+    <footer>
+        <h4>Com 💛 Info Jr UFBA 2022</h4>
+    </footer>
+
+    <div id="modal" class="modal-container">
+        <div class="modal-internal">
+            <div class="div-info">
+                <h4 id="text-modal">Adicionar pessoa a fila</h4>
+                <form class="inputs-text">
+                    <input type="text" class="input-text-one" id="client" placeholder="Nome completo do cliente">
+                    <input type="text" class="input-text-one" id="amountBreads" placeholder="Total de pães: ">
+                </form>
+            </div>
+            <div class="div-button">
+                <button onclick="record.send()" class="button-send ">Enviar</button>
+                <button id="button-cancel" class="button-cancel">Cancelar</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
